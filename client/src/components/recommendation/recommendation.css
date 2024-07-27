@@ -1,0 +1,93 @@
+.recommendation {
+    width: 100%;
+    height: 100%;
+}
+
+.recommendation_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 90%;
+}
+
+.recommendation_object img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.recommendation_object {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    border-radius: 10px;
+    border: solid black 1px;
+}
+
+.recommendation_outer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.recommendation_object_bottom h3 {
+    margin: 2rem 0 0 0;
+}
+
+.to_mainpage {
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    gap: 3px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.to_mainpage:hover {
+    text-decoration: none;
+}
+
+.maker {
+    color: gray;
+    flex: 1;
+}
+
+.recommendation_object_bottom_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommendation_object_bottom_bottom div {
+    font-size: small;
+    border: solid black 1px;
+    padding: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.hidden_div {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    padding: 1rem;
+    max-width: 390px;
+    /* Set a maximum width */
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.05), 0 0 7px 3px rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+.recommendation_object_bottom_bottom:hover .hidden_div {
+    display: block;
+}
+
+.recommendation_buttons {
+    padding: 0 0 0 2rem;
+    width: 180px;
+}
